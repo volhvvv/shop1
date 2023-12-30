@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/фото/head/іконка.png" type="image/png">
+    <link rel="shortcut icon" href="/фото/head/іконка.png" type="image/png">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="logo-wrapper">
+                    <a href="/index.html/main.html"> <img class="logo" src="/фото/head/logo.png" alt=""> </a>
+                </div>
+            </div>
+
+            <div class="nav-wrapper">
+                <div class="container">
+                    <nav class="navigation">
+                        <ul class="nav-menu">
+                            <li><a class="nav-menu-link" href="/index.html/news.html">Новини</a></li>
+                            <li><a class="nav-menu-link" href="/index.html/music.html">Музика</a></li>
+                            <li><a class="nav-menu-link" href="/index.html/clothes.html">Мерч</a></li>
+                            <li><a class="nav-menu-link" href="/index.html/concerts.html">Концерти</a></li>
+                            <li><a class="nav-menu-link" href="/index.html/band.html">Гурти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            
+            <h3>Найновіші</h3>
+            
+            <div class="music-container">
+    
+                <div class="song-container">
+                    <button class="song-button-play" onclick="togglePlay('audio1')">
+                        <img src="/music/img/play-buttton.png" alt="">
+                    </button>
+                    <img class="song-img" src="/music/img/nec.jpg" alt="">
+                    <div class="song-info">
+                        <p class="song-name">Моим Богам</p>
+                        <p class="song-artist">Молотх</p>
+                    </div>
+                    <div class="song-range">
+                        <span class="current-time" id="current-time1">0:00</span>
+                        <input type="range" min="0" value="0" oninput="seekTime('audio1', this)" max="100">
+                        <span class="duration" id="duration1">0:00</span>
+                    </div>
+                    <audio id="audio1" src="/music/1_3 - To the Gods of Mine - M8 (320).mp3" ontimeupdate="updateTime('audio1')"></audio>
+                    <a href="/music/1_3 - To the Gods of Mine - M8 (320).mp3" download>
+                        <button class="song-button-donwlod">
+                            <img src="/music/img/download-button.png" alt="">
+                        </button>
+                    </a>
+                </div>
+    
+                <div class="song-container">
+                    <button class="song-button-play" onclick="togglePlay('audio2')">
+                        <img src="/music/img/play-buttton.png" alt="">
+                    </button>
+                    <img class="song-img" src="/music/img/Смерть_Бальдра.jpg" alt="">
+                    <div class="song-info">
+                        <p class="song-name">Balferd Baldrs</p>
+                        <p class="song-artist">Burzum</p>
+                    </div>
+                    <div class="song-range">
+                        <span class="current-time" id="current-time2">0:00</span>
+                        <input type="range" min="0" value="0" oninput="seekTime('audio2', this)" max="100">
+                        <span class="duration" id="duration2">0:00</span>
+                    </div>
+                    <audio id="audio2" src="/music/Burzum_-_Balferd_Baldrs_(musmore.com).mp3" ontimeupdate="updateTime('audio2')"></audio>
+                    <a href="/music/Burzum_-_Balferd_Baldrs_(musmore.com).mp3" download>
+                        <button class="song-button-donwlod">
+                            <img src="/music/img/download-button.png" alt="">
+                        </button>
+                    </a>
+                </div>
+    
+                <div class="song-container">
+                    <button class="song-button-play" onclick="togglePlay('audio3')">
+                        <img src="/music/img/play-buttton.png" alt="">
+                    </button>
+                    <img class="song-img" src="/music/img/kekht.jpg" alt="">
+                    <div class="song-info">
+                        <p class="song-name">Amor</p>
+                        <p class="song-artist">Këkht Aräkh</p>
+                    </div>
+                    <div class="song-range">
+                        <span class="current-time" id="current-time3">0:00</span>
+                        <input type="range" min="0" value="0" oninput="seekTime('audio3', this)" max="100">
+                        <span class="duration" id="duration3">0:00</span>
+                    </div>
+                    <audio id="audio3" src="/music/Kkht_Arkh_-_Amor_(musmore.com).mp3" ontimeupdate="updateTime('audio3')"></audio>
+                    <a href="/music/Kkht_Arkh_-_Amor_(musmore.com).mp3" download>
+                        <button class="song-button-donwlod">
+                            <img src="/music/img/download-button.png" alt="">
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+           <h3 class="music-review-title">Огляди</h3>
+           <div class="music-review">
+
+                <div class="burzum">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ne-KI12_7mU?si=elFHFQmbsrCdq_ZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7ocjXEy6O9w?si=sXu9e-hTGqHEeYd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+                <div class="bsod">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mhyQiNoH5cg?si=X2P-M6oOjq-XrjlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              
+                <h3 class="music-review-title">Актуальне</h3>
+                <div class="burzum">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EQyw4luQnq4?si=t7vGlg5UdD1xK75H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ENrcitK7Ebg?si=_AuQFlBPYQXfdnP_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="burzum">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aRYmNKmPsxk?si=M_kg-cUvxFgTk94l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/elTRscIHS88?si=ekpzOU4PgOM_qEEB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+           </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <img class="footer-logo" src="/фото/head/logo2.png" alt="">
+                <p>&copy; 2023 Всі права захищені. | <a class="link" href="/index.html/private.html">Політика конфиденциальности</a></p>
+                <p>Контактна інформація: <a class="link" href="mailto:1freezing.moon1@gmail.com">1freezing.moon1@gmail.com</a> | Телефон: <a class="link" href="tel:+380953073397">+380 (95) 307 3397</a></p>
+
+            </div>
+        </footer>
+    
+        <script>
+            function togglePlay(audioId) {
+        var audio = document.getElementById(audioId);
+        var playButton = document.querySelector('.song-button-play');
+    
+        if (audio.paused) {
+            audio.play();
+            playButton.classList.add('playing');
+        } else {
+            audio.pause();
+            playButton.classList.remove('playing');
+        }
+    }
+    
+    function seekTime(audioId, rangeInput) {
+        var audio = document.getElementById(audioId);
+        var currentTimeSpan = rangeInput.parentElement.querySelector('.current-time');
+    
+        var seekTo = (rangeInput.value / 100) * audio.duration;
+        audio.currentTime = seekTo;
+    
+        var minutes = Math.floor(seekTo / 60);
+        var seconds = Math.floor(seekTo % 60);
+        currentTimeSpan.textContent = minutes +    ':' + (seconds < 10 ? '0' : '') + seconds;
+    }
+    
+    function updateTime(audioId) {
+        var audio = document.getElementById(audioId);
+        var rangeInput = document.querySelector('input[type="range"]');
+        var currentTimeSpan = document.getElementById('current-time' + audioId.charAt(audioId.length-1));
+        var durationSpan = document.getElementById('duration' + audioId.charAt(audioId.length-1));
+    
+        var currentTime = audio.currentTime;
+        var duration = audio.duration;
+    
+        var minutes = Math.floor(currentTime / 60);
+        var seconds = Math.floor(currentTime % 60);
+        currentTimeSpan.textContent = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+    
+        minutes = Math.floor(duration / 60);
+        seconds = Math.floor(duration % 60);
+        durationSpan.textContent = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+    
+        rangeInput.value = (currentTime / duration) * 100;
+    }
+    
+    var audio1 = document.getElementById('audio1');
+    var audio2 = document.getElementById('audio2');
+    var audio3 = document.getElementById('audio3');
+    
+    audio1.addEventListener('timeupdate', function() {
+        updateTime('audio1');
+    });
+    
+    audio2.addEventListener('timeupdate', function() {
+        updateTime('audio2');
+    });
+    
+    audio3.addEventListener('timeupdate', function() {
+        updateTime('audio3');
+    });
+    </script>
+
+    </div>
+</body>
+
+</html>
